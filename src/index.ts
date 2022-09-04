@@ -1,6 +1,7 @@
 /**
  * Makes promises that may resolve to an object with an `error` property reject with that error.
- * @param promise A promise that resolves to an object that may contain an `error` property
+ * @public
+ * @param promise - A promise that resolves to an object that may contain an `error` property
  * @returns A promise that resolves with the same value as the base promise when there is no error, but rejects when there is an `error` property on the base promise.
  * @remarks
  *  If the `error` property is a non-error object, it will be converted into an Error object with `cause` property set to the original object.
